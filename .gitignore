@@ -1,1 +1,4 @@
 *.pyc
+scenevideo_output.csv
+build/
+dist/
