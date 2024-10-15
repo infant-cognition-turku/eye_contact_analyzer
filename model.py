@@ -8,7 +8,7 @@ def model_static(pretrained=False, **kwargs):
     if pretrained:
         print ('loading saved model weights')
         model_dict = model.state_dict()
-        snapshot = torch.load(pretrained)
+        snapshot = torch.load(pretrained, map_location=torch.device('cpu'))
         snapshot = {k: v for k, v in snapshot.items() if k in model_dict}
         model_dict.update(snapshot)
         model.load_state_dict(model_dict)

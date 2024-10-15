@@ -1,4 +1,8 @@
-*.pyc
-scenevideo_output.csv
-build/
-dist/
+eye-contact-env/
+# Environment/IDE specific files (e.g., VSCode)
+.vscode/
+*.log
+
+# Git-specific files
+.gitignore
+.gitattributes

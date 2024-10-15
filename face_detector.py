@@ -66,7 +66,7 @@ def detect_faces_opencv(frame, net):
 def run(video_path, model_weight, jitter, save_vis, display_off, save_csv):
     red = Color("red")
     colors = list(red.range_to(Color("green"), 10))
-    font = ImageFont.truetype("data/arial.ttf", 40)
+    font = ImageFont.truetype("/usr/share/fonts/truetype/msttcorefonts/Arial.ttf", 40)
 
     # Video capture
     if video_path is None:
