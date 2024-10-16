@@ -1,12 +1,11 @@
 # Eye Contact Detection Project
-
-This project uses a Convolutional Neural Network (CNN) to detect eye contact from video data. The primary model and tools used are based on the work from the [Eye Contact CNN GitHub repository](https://github.com/rehg-lab/eye-contact-cnn).
+This project analyzes moments of mutual eye contact from data recorded by glasses with an egocentric scene camera and eye tracker. The code detects a face in the observer’s scene and determines whether the face is looking at the observer/camera using a Convolutional Neural Network (CNN) model developed by Chong et al. (2022) Eye Contact CNN GitHub repository. Data on the observer’s eye movements are used to establish whether the observer is looking at the face in the scene.
 
 ## Project Overview
 
-The project processes video input, extracts gaze data, and detects eye contact between individuals using a pretrained CNN model. It integrates tools for gaze tracking and face detection to achieve accurate results.
+The code processes scene video input, extracts gaze data, and detects eye contact between individuals through an integrative analysis of the scene video (using a pretrained CNN model) and eye tracking data. The code has been developed and tested using data recorded by Tobii Pro Glasses 3. The part of the project based on scene video analysis can be adapted to other wearable eye tracking systems without modification, but the part relying on eye tracking data would require changes to the code that preprocesses and prepares the eye tracking data for integrated analysis.
 
-## Requirements
+## Software requirements
 
 The project is built and tested using **Python 3.7.0**. Several specific versions of Python libraries are required for compatibility, including **PyTorch 0.4.1** and **torchvision 0.2.1**, which are deprecated and must be manually installed.
 
