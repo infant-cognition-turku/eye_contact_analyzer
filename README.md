@@ -1,9 +1,11 @@
 # Eye Contact Detection Project
-This project analyzes moments of mutual eye contact from data recorded by glasses with an egocentric scene camera and eye tracker. The code detects a face in the observer’s scene and determines whether the face is looking at the observer/camera using a Convolutional Neural Network (CNN) model developed by Chong et al. (2022) Eye Contact CNN GitHub repository. Data on the observer’s eye movements are used to establish whether the observer is looking at the face in the scene.
+This code analyzes moments of mutual eye contact using data recorded by glasses equipped with an egocentric scene camera and eye tracker. The code uses a Convolutional Neural Network (CNN) model developed by Chong et al.[1] to detect whether a face in the scene camera’s view is looking at the observer. Data on the observer’s eye movements are then used to determine whether the observer is looking at the face in the scene.
+
+[1] Chong, E., Clark-Whitney, E., Southerland, A., Stubbs, E., Miller, C., Ajodan, E. L., Silverman, M. R., Lord, C., Rozga, A., Jones, R. M., & Rehg, J. M. (2020). Detection of eye contact with deep neural networks is as accurate as human experts. Nature communications, 11(1), 6386. https://doi.org/10.1038/s41467-020-19712-x
 
 ## Project Overview
 
-The code processes scene video input, extracts gaze data, and detects eye contact between individuals through an integrative analysis of the scene video (using a pretrained CNN model) and eye tracking data. The code has been developed and tested using data recorded by Tobii Pro Glasses 3. The part of the project based on scene video analysis can be adapted to other wearable eye tracking systems without modification, but the part relying on eye tracking data would require changes to the code that preprocesses and prepares the eye tracking data for integrated analysis.
+The code processes scene video input, extracts gaze data, and detects eye contact between individuals through an integrative analysis of the scene video (using a pretrained CNN model developed by Chong et al.) and eye tracking data. The code has been developed and tested using data recorded by Tobii Pro Glasses 3. The part of the project based on scene video analysis can be adapted to other wearable eye tracking systems without modification, but the part relying on eye tracking data would require changes to the code that preprocesses and prepares the eye tracking data for integrated analysis.
 
 ## Software requirements
 
